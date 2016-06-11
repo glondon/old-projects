@@ -1,0 +1,651 @@
+* {padding: 0; margin: 0;}
+#wrapper {margin: 0 auto; padding: 0; width: 960px;}
+/* Normal, standard links. */
+a {color: #26a;text-decoration: none;}
+a:hover {background:#ffc;}
+#top {background:#80c5df; min-width:980px;}
+.navtop {padding: 25px;}
+.navtop ul {list-style: none;}
+.navtop ul li {display: inline;}
+.navtop ul li a {padding: 8px 10px;color: #fff;font-size: 160%;font-weight: bold;}
+.navtop ul li a:hover {background:none;color: #347a94;}
+.navtop ul li.currentp a {background: #161f23;color: #e8f0f3;-moz-border-radius:8px;-webkit-border-radius:8px;
+						  -opera-border-radius:8px;-khtml-border-radius:8px;border-radius:8px;}
+.search {top: 20px;}
+.search input {height:25px;}
+#hmenu {margin:0;padding:5px 0 10px;}
+#hmenu ul {display:inline;margin:0;padding:0;}
+#hmenu ul li {padding:0;display:inline;margin:0 20px 0 0;}
+#hmenu ul li {font-size:1.2em;font-weight:bold;text-transform:uppercase;}	
+#tophmenu, #hmenu {background:url('../../../Assets/border_h.png') repeat-x bottom;padding-top:10px;}
+.header {padding-bottom: 20px; text-align:center; width:35%; padding-top: 20px;}
+.banner_right {text-align:center;}
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #000066;
+	text-decoration: none;
+}
+a.nav:hover
+{
+	color: #000099;
+}
+b {
+	font-size:10px;
+}
+/* Tables should show empty cells. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use verdana in black. */
+body, td, th , tr
+{
+	font-size:62.5%;font-family: 'Lucida Grande', Sans-Serif; 
+	color:#555;
+}
+label {
+	font-size:10px;
+}
+td {
+	font-size:10px;
+}
+
+/* Standard horizontal rule.. ([hr], etc.) */
+hr, .hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #666666;
+	background-color: #666666;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/* No image should have a border when linked */
+a img
+{
+	border: 0;
+	background:none;
+}
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #000000;
+	background-color: #D7DAEC;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+	line-height: 1.4em;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: nowrap;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #000000;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+/* Generally, those [?] icons.  This makes your cursor a help icon. */
+.help
+{
+	cursor: help;
+}
+
+/* /me uses this a lot. (emote, try typing /me in a post.) */
+.meaction
+{
+	color: red;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 96%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: yellow;
+	font-weight: bold;
+	color: black;
+}
+
+/* Alternating backgrounds for posts, and several other sections of the forum. */
+.windowbg, #preview_body
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	padding: 10px 10px 10px 10px;
+}
+.windowbg: hover, #preview_body: hover
+{
+	color: #000000;
+	background-color: blue;
+}
+
+.windowbg2
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	padding: 10px 10px 10px 10px;
+}
+.windowbg3
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 12px;
+	padding: 10px 10px 10px 10px;
+}
+/* the today container in calendar */
+.calendar_today
+{
+	background-color: #FFFFFF;
+}
+
+/* These are used primarily for titles, but also for headers (the row that says what everything in the table is.) */
+.titlebg, tr.titlebg th, tr.titlebg td, .titlebg2, tr.titlebg2 th, tr.titlebg2 td
+{
+	color: black;
+	font-style: normal;
+	background: url(images/titlebg.gif) #FFFFFF repeat-x;
+	border-bottom: solid 1px #F9F9F9;
+	border-top: solid 1px #FFFFFF;
+	padding: 10px 10px 10px 10px;
+	font-size:12px;
+	padding-bottom:5px;
+
+}
+.titlebg, .titlebg a:link, .titlebg a:visited
+{
+	font-weight: bold;
+	color: black;
+	font-style: normal;
+}
+
+.titlebg a:hover
+{
+	color: #404040;
+}
+/* same as titlebg, but used where bold text is not needed */
+.titlebg2 a:link, .titlebg2 a:visited
+{
+	color: black;
+	font-style: normal;
+	text-decoration: underline;
+}
+
+.titlebg2 a:hover
+{
+	text-decoration: underline;
+}
+
+/* This is used for categories, page indexes, and several other areas in the forum.
+.catbg and .catbg2 is for boardindex, while .catbg3 is for messageindex and display headers*/
+.catbg , tr.catbg td , .catbg3 , tr.catbg3 td
+{
+	background: url(images/brkdmrcnorta.gif)  repeat-x;
+	color: #ffffff;
+	padding: 10px 10px 10px 10px;
+	font-size: 12px;
+}
+.catbg2 , tr.catbg2 td
+{
+	background: url(images/brkdmrcnorta.gif)  repeat-x;
+	color: #ffffff;
+	padding-left: 10px 10px 10px 10px;
+	font-size: 12px;
+}
+.catbg, .catbg2, .catbg3
+{
+	border-bottom: solid 1px #D82F1B;
+}
+.catbg, .catbg2
+{
+	font-weight: bold;
+}
+.catbg3, tr.catbg3 td, .catbg3 a:link, .catbg3 a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+.catbg a:link, .catbg a:visited , .catbg2 a:link, .catbg2 a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+.catbg a:hover, .catbg2 a:hover, .catbg3 a:hover
+{
+	background:none;
+}
+/* This is used for tables that have a grid/border background color (such as the topic listing.) */
+.bordercolor
+{
+	background-color: #ADADAD;
+	padding: 0px;
+}
+.bordercolor2
+{
+	border-color: #ADADAD;
+	padding: 0px;
+}
+
+/* This is used on tables that should just have a border around them. */
+.tborder
+{
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+/* Default font sizes: small (8pt), normal (10pt), and large (14pt). */
+.smalltext
+{
+	line-height:140%;
+	font-size: 10px;
+	padding: 2px;
+}
+.middletext
+{
+	font-size: 12px;
+	padding: 2px;
+}
+.normaltext
+{
+	font-size: 12px;
+	padding: 2px;
+}
+.largetext
+{
+	font-size: 14px;
+	padding: 2px;
+}
+
+
+/* Posts and personal messages displayed throughout the forum. */
+.post, .personalmessage
+{
+	width: 100%;
+	overflow: auto;
+	line-height: 1.3em;
+	font-size:12px;
+}
+
+/* All the signatures used in the forum.  If your forum users use Mozilla, Opera, or Safari, you might add max-height here ;). */
+.signature
+{
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 3px;
+	line-height: 1.3em;
+	font-size:12px;
+}
+
+/* Sometimes there will be an error when you post */
+.error
+{
+	color: red;
+	font-size:12px;
+}
+
+
+/* definitions for the main tab, active means the tab reflects which page is displayed */
+  .maintab_first  {
+vertical-align : top;
+}
+.maintab_back {
+vertical-align : top;
+}
+.maintab_last {
+vertical-align : top;
+}
+.maintab_active_first {
+vertical-align : top;
+}
+.maintab_active_back {
+vertical-align : top;
+}
+.maintab_active_last {
+vertical-align : top;
+}
+.maintab_back {
+padding-right : 1em;
+padding-left : 1em;
+padding-bottom : 0.3em;
+padding-top : 0.3em;
+text-decoration : none;
+}
+.maintab_active_back {
+padding-right : 1em;
+padding-left : 1em;
+padding-bottom : 0.3em;
+padding-top : 0.3em;
+text-decoration : none;
+}
+.maintab_first {
+display : none;
+}
+.maintab_back {
+border-bottom : 3px solid #305764;
+}
+.maintab_last {
+display : none;
+}
+.maintab_active_first {
+display : none;
+}
+.maintab_active_back {
+color : black;
+border-bottom : 3px solid #305764;
+text-decoration : none;
+}
+.maintab_active_last {
+display : none;
+}
+.maintab_back A:link {
+text-decoration : none;
+}
+.maintab_back A:visited {
+text-decoration : none;
+}
+.maintab_active_back A:link {
+text-decoration : none;
+}
+.maintab_active_back A:visited {
+text-decoration : none;
+}
+.maintab_back A:hover {
+border-bottom-width : 3px;
+border-bottom-color : #305764;
+color : black;
+text-decoration : none;
+}
+.maintab_active_back A:hover {
+border-bottom-width : 3px;
+border-bottom-color : #305764;
+color : black;
+text-decoration : none;
+}
+.mirrortab_first {
+vertical-align : top;
+}
+.mirrortab_back {
+vertical-align : top;
+}
+.mirrortab_last {
+vertical-align : top;
+}
+.mirrortab_active_first {
+vertical-align : top;
+}
+.mirrortab_active_back {
+vertical-align : top;
+}
+.mirrortab_active_last {
+vertical-align : top;
+}
+.mirrortab_back {
+padding-right : 1em;
+padding-left : 1em;
+padding-bottom : 0.3em;
+padding-top : 0.3em;
+text-decoration : none;
+}
+.mirrortab_active_back {
+padding-right : 1em;
+padding-left : 1em;
+padding-bottom : 0.3em;
+padding-top : 0.3em;
+text-decoration : none;
+}
+.mirrortab_first {
+display : none;
+}
+.mirrortab_back {
+border-top : 3px solid #305764;
+}
+.mirrortab_last {
+display : none;
+}
+.mirrortab_active_first {
+display : none;
+}
+.mirrortab_active_back {
+border-top : 3px solid #305764;
+color : black;
+text-decoration : none;
+}
+.mirrortab_active_last {
+display : none;
+}
+.mirrortab_back A:link {
+text-decoration : none;
+}
+.mirrortab_back A:visited {
+text-decoration : none;
+}
+.mirrortab_active_back A:link {
+text-decoration : none;
+}
+.mirrortab_active_back A:visited {
+text-decoration : none;
+}
+.mirrortab_back A:hover {
+border-top-width : 3px;
+color : black;
+border-top-color : #305764;
+text-decoration : none;
+}
+.mirrortab_active_back A:hover {
+border-top-width : 3px;
+color : black;
+border-top-color : #305764;
+text-decoration : none;
+} 
+/* The AJAX notifier */
+#ajax_in_progress
+{
+	background: #32CD32;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 3px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.brkdmrcnsol
+{
+	background-image: url(images/brkdmrcnsol.gif);
+	width: 41px;
+	height: 32px;
+}
+
+.brkdmrcnsag
+{
+	background-image: url(images/brkdmrcnsag.gif);
+	width: 41px;
+	height: 32px;
+}
+h2, h3, h4, h5, h6 {font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;font-weight: bold;text-transform:uppercase;
+					line-height: 1.6em;margin: 0.7em 0 0.7em;}
+h1 { font-size: 1em;font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;font-weight: bold;text-transform:uppercase;
+	 line-height: 1.6em;margin: 0 0 0.7em; color: white; display:inline; white-space:nowrap; text-align: center; }
+h2 { font-size: 1em; display:inline; white-space:nowrap; color: white; text-align: center;}
+h3 { font-size: 1.3em; }
+h4 { font-size: 1em; }
+
+.topic-crap
+{
+	background: url(images/brkdmrcnsol.gif) no-repeat;
+	vertical-align:middle;
+	text-align:center;
+	padding-left:8px;
+	margin-top:2px;
+	margin-bottom:4px;
+}
+.brkdmrcnorta
+{
+	background: url(images/brkdmrcnorta.gif) #E9F0F6 repeat-x;
+	color: white;
+	font-weight: bold;
+    text-align: center;
+	font-size:12px;
+}
+.brkdmrcnaltsol
+{
+	background-image: url(images/brkdmrcnaltsol.gif);
+	width: 41px;
+	height: 32px;
+}
+
+.brkdmrcnaltsag
+{
+	background-image: url(images/brkdmrcnaltsag.gif);
+	width: 41px;
+	height: 32px;
+}
+.brkdmrcnaltorta
+{
+	background: url(images/brkdmrcnaltorta.gif) #E9F0F6 repeat-x;
+}
+
+#stylefour{position:relative;display:block;height:39px;font-weight:bold;background:transparent url(images/brkdmrcnorta.gif) repeat-x top left;font-family:Arial,Verdana,Helvitica,sans-serif;border-top:0px solid #ffffff;}
+#stylefour ul{margin:0;padding:0;list-style-type:none;width:auto;}
+#stylefour ul li{display:block;float:left;margin:0;}
+#stylefour ul li a{display:block;float:left;color:#ffffff;text-decoration:none;padding:11px 20px 0 20px;height:23px;background:transparent url(images/brkdmrcnorta.jpg) no-repeat top right;}
+#stylefour ul li a:hover{color:#e2f2f6}
+
+
+/* Yeni Üye Giriþ Paneli by Hoochie Coochie Man and Powered by YooTheme  */
+span.quick span.yoo-login span.login {
+   height: 20px;
+   width: 500px;
+}
+
+span.quick span.yoo-login span.login .username,
+span.quick span.yoo-login span.login .password,
+span.quick span.yoo-login span.login .login-button-text,
+span.quick span.yoo-login span.login .login-button-icon,
+span.quick span.yoo-login span.login .lostpassword,
+span.quick span.yoo-login span.login .activatecode,
+span.quick span.yoo-login span.login .registration,
+span.quick span.yoo-login span.logout .greeting,
+span.quick span.yoo-login span.logout .logout-button-text,
+span.quick span.yoo-login span.logout .logout-button-icon {
+   padding-right: 5px;
+   float: left;
+}
+
+span.quick span.yoo-login span.login .username input, span.quick span.yoo-login span.login .password input {
+   width: 70px;
+   height: 16px;
+   padding: 4px 0px 0px 30px;
+   border: none;
+   outline: none;
+   float: left;
+   color: #646464;
+}
+
+span.quick span.yoo-login span.login .username input {
+   background: url('images/username_bg.png') no-repeat 0 0;
+}
+
+span.quick span.yoo-login span.login .password input {
+   background: url('images/password_bg.png') no-repeat 0 0;
+}
+
+span.quick span.yoo-login span.login .username input:hover, span.quick span.yoo-login span.login .username input.sfhover {
+   background: url('images/username_bg.png') no-repeat 0 -20px;
+   color: #000000
+}
+
+span.quick span.yoo-login span.login .password input:hover, span.quick span.yoo-login span.login .password input.sfhover {
+   background: url('images/password_bg.png') no-repeat 0 -20px;
+   color: #000000
+}
+
+span.quick span.yoo-login span.login .username input:focus, span.quick span.yoo-login span.login .username input.sffocus {
+   background: url('images/username_bg.png') no-repeat 0 -20px;
+   color: #000000
+}
+
+span.quick span.yoo-login span.login .password input:focus, span.quick span.yoo-login span.login .password input.sffocus {
+   background: url('images/password_bg.png') no-repeat 0 -20px;
+   color: #000000
+}
+
+span.quick span.yoo-login span.login .login-button-text button {
+   margin-top: -1px;
+   cursor: pointer;
+}
+
+span.quick span.yoo-login span.login .login-button-icon button {
+   display: block;
+   height: 20px;
+   width: 21px;
+   padding: 0px;
+   border: medium none;
+   background: url('images/login_button_bg.png') no-repeat 0 0;
+   cursor: pointer;
+   overflow: hidden
+}
+
+span.quick span.yoo-login span.login .login-button-icon button:hover, span.quick span.yoo-login span.login .login-button-icon button.sfhover  {
+   background: url('images/login_button_bg.png') no-repeat 0 -20px;
+}
+
+span.quick span.yoo-login span.login .lostpassword a, span.quick span.yoo-login span.login .activatecode a, span.quick span.yoo-login span.login .registration a {
+   display: block;
+   height: 20px;
+   width: 25px;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+span.quick span.yoo-login span.login .lostpassword a  {
+   background: url('images/lost_password_bg.png') no-repeat 0 0px;
+}
+
+span.quick span.yoo-login span.login .activatecode a  {
+   background: url('images/activatecode.png') no-repeat 0 0px;
+}
+
+span.quick span.yoo-login span.login .registration a  {
+   background: url('images/registration_bg.png') no-repeat 0 0px;
+}
+#footer {font-size: 1.1em;font-style: normal;font-weight: normal; color: #ffffff; background:#225d73; padding:28px; 
+	     border-top:solid 2px #000099; margin-top:20px; min-width:980px;}
+#footer a {color: #fff; text-decoration: none}
+#footer a:hover {color: #cbe3ec;text-decoration:underline;background:none;}
+#footercontent {margin: 0 auto;width: 960px;}
+.whitespace {background:#ffffff; border:solid 2px #000099;}
+.side {display:block;}
+.side ul {list-style: none;}
+.side ul li {display: inline; padding:8px;}

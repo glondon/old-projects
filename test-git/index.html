@@ -1,0 +1,79 @@
+<?php
+	session_start();
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Testing Stuff</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["contact_us"]["norobot"].value;
+if (x==null || x=="")
+  {
+  alert("Captcha question must be answered");
+  return false;
+  }
+}
+
+</script>
+
+<div align="center"><form action="gdform.php" method="post" name="contact_us" target="_parent" id="contact_us" onsubmit="return validateForm()">
+    <input type="hidden" name="subject" value="Form Submission" />
+    <input type="hidden" name="redirect" value="thankyou.html" />
+    <table width="75%" border="0" align="center" cellpadding="3" summary="Table used for contact form.">
+  <tr>
+    <th colspan="2" scope="col"><div align="center">If you have Questions about any of the sites on this website, just fill out this form.</div></th>
+    </tr>
+  <tr>
+    <td width="40%"><p style="color:#FF0000; font-size:16px;"><?php if (isset($_GET['submit'])) {
+     echo "Captcha was incorrect"; } ?></p></td>
+    <td width="60%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="required" type="hidden" id="required" value="name" />
+                  Name:</td>
+    <td><input name="first_name" type="text" id="first_name" size="40" maxlength="100" value="<?php if (isset($_SESSION['name'])) echo $_SESSION['name']; ?>" /></td>
+  </tr>
+  <tr>
+    <td>
+            <input name="required" type="hidden" id="required" value="email" />
+                  Email:</td>
+    <td><input name="email" type="text" id="email" size="40" maxlength="100" value="<?php if (isset($_SESSION['email'])) echo $_SESSION['email']; ?>" /></td>
+  </tr>
+    <td>Insert referral links for us to look at here:</td>
+    <td><input name="links" type="text" id="links" size="40" maxlength="500" value="<?php if (isset($_SESSION['links'])) echo $_SESSION['links']; ?>" /></td>
+  </tr>
+  <tr>
+    <td><input name="required" type="hidden" id="required" value="questions_comments" />
+                  Questions/Comments:</td>
+    <td><textarea name="questions" id="questions" cols="50" rows="4"><?php if (isset($_SESSION['questions'])) echo $_SESSION['questions']; ?></textarea></td>
+  </tr>
+  <tr>
+  <tr>
+    <td colspan="2">We will consider signing up under your referral link if we think it will benefit and match this site's current content.</td>
+  </tr>
+  
+  <tr>
+    <td>Enter the numbers to the right:</td>
+    <td><img src="captcha.php" style="padding-bottom:5px;" /><br />
+    <input type="text" name="norobot" /><br /><br />
+</td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="submit" id="submit" value="Submit" /></td>
+  </tr>
+</table>
+</form>
+</div>
+</body>
+</html>
+<?php session_destroy(); ?>
