@@ -1,7 +1,7 @@
 Old Projects
 ========================
 
-Some old project that unfortunately got discontinued for whatever the reason. 
+Some old projects that unfortunately got discontinued for whatever the reason. 
 
 <b>signup-forum</b> - Used to be located at SignUpAndMakeMoney.com/forum, but I decided to take the forum down due to not really seeing the need to have it anymore. It was a Simple Machines Forum which I modified the theme template to match the current look of the website. 
 
