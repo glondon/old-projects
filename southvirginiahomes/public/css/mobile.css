@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html {
+        background: url(../images/luxury-home.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+}
+#mainWrapper {
+	margin-top: 35px;
+	padding-top:25px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color:#FFFFFF;
+	padding:20px;
+	-moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px; /* Safari, Chrome */
+	-khtml-border-radius: 10px; /* Konqueror */
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+#FooterArea {
+	font-size:15px;
+	text-align:center;
+	padding-bottom:30px;
+	padding-top:15px;
+}
+#FooterArea li {
+	list-style:none;
+	display:inline;
+	padding-right:20px;
+}
+#FooterArea li a {
+	text-decoration: none;
+	color:#FFFFFF;
+}
+#FooterArea li a.active {
+	padding:15px;
+	color:#000000;
+	background-color:#fff;
+	-moz-border-radius-bottomright: 10px; 
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-radius-bottomright: 10px;
+	-khtml-border-radius-bottomright: 10px; 
+	-webkit-border-radius-bottomleft: 10px;
+	-khtml-border-radius-bottomleft: 10px; 
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+#FooterArea li a:hover {
+	color:#CCCCCC;
+}
+h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Zend Form Elements */
+dt {padding:0 0 2px 0;}
+dd {padding:0 0 2px 2px}
+dt label {font-weight:bold; font-size:13px; float:left;width:120px; margin-left:25px; margin-right:1px; padding-top:5px;}
+dt label.required:before {content:"* "; color:#ff0000;}
+ul.errors {padding:2px 0 2px 15px; color:#ff0000; font-size:10px;}
+ul.errors li {
+list-style:none;
+}
+input {
+
+}
+#submit {
+	color: #061230;
+	background-color:#ee386b;
+	font-size: 14px;
+ 	width: 80px;
+ 	height: 28px;
+ 	border: none;
+	-moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px; /* Safari, Chrome */
+	-khtml-border-radius: 10px; /* Konqueror */
+}
+#submit:hover {
+	color:#fff;
+	font-size:15px;
+	font-weight:bold;
+	background-color:#666666;
+}
+fieldset {
+	margin: 0 5px 20px 0;
+	padding: 40px;
+	border: 1px solid #ddd;
+	background-color:#b7798b;
+	-moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px; /* Safari, Chrome */
+	-khtml-border-radius: 10px; /* Konqueror */
+	filter:alpha(opacity=80);
+	opacity:0.8;
+}
+.formt {
+	padding-bottom: 30px;
+	font-family: Arial, Verdana, sans-serif, Helvetica;
+	font-size: 1.9em;
+	font-weight:normal;
+}
+

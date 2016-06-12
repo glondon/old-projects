@@ -1,0 +1,37 @@
+<?php $this->headTitle()->append('Norfolk and Virginia Beach buyers and sellers.'); 
+$this->headMeta()->appendName('description', 'Sign up to receive free updates and keep up to date on the Norfolk and Virginia Beach housing market.'); 
+$this->headMeta()->appendName('keywords', 'signup, news, Norfolk, Virginia Beach, housing market, real estate agent'); ?>
+
+<table>
+<tr>
+<td width="50%" valign="top" style="padding:20px;">
+<p>Sign up today to get MLS access and notified of the latest real estate news and offers in <b>Virginia Beach</b> and <b>Norfolk</b>!</p>
+
+<p>Let David Boord help you find a home whether it's single family, condo, townhouse, etc... Just let him know what property type you're interested in. We specialize in first time home buyers.</p>
+</td>
+
+<td width="50%">
+<?php if ($this->escape($this->submitted)) { ?>
+<fieldset>
+
+<h2>Thankyou for requesting an appointment</h2>
+<p>An agent will contact you about your home search soon.</p>
+<br /><br /><br /><br /><br />
+</fieldset>
+
+<?php } else { ?>        
+
+<fieldset>
+	
+<span class="formt">Free Consultation</span>
+
+<?php echo $this->form; ?>
+
+</fieldset>
+
+<?php } ?> 
+
+</td>
+</tr>
+</table>
+

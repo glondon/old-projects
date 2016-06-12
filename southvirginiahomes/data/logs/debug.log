@@ -1,0 +1,18 @@
+2011-04-11T01:45:32+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-15T20:18:29+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signupmoney
+2011-05-15T20:19:52+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-16T00:51:54+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-16T01:28:01+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-17T00:36:58+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-20T02:23:53+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-20T03:49:10+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-23T02:21:11+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-23T02:27:17+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-23T02:31:52+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-23T02:35:14+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-23T02:44:45+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2011-05-23T02:47:21+00:00 NOTICE (5): Successful login attempt from 127.0.0.1 user signerupper
+2012-01-09T18:17:54-07:00 NOTICE (5): The invocation of sendSms() was not successful.
+The error code is: 0042
+The error message is: Account does not exist or does not belong to user.
+The error description is: Account does not exist or does not belong to user.

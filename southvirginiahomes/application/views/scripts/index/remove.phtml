@@ -1,0 +1,23 @@
+<?php $this->headTitle()->append('Account removal'); ?>
+
+<fieldset>
+
+<h2>Account Removal</h2>
+
+<?php if ($this->escape($this->noemail)) { ?>
+
+	<p>Sorry, but the link didn't contain an email or it's not in our records.</p>
+
+<?php } elseif ($this->escape($this->inactive)) { ?>
+
+	<p>Sorry, but the email <b><?php echo $this->escape($this->email); ?></b> has already been deactivated.</p>
+
+<?php } else { ?>
+
+	<p>Sorry to see you go. <b><?php echo $this->escape($this->email); ?></b> will no longer recieve emails from South Virginia Homes.</p>
+	
+<?php } ?>
+
+	<br /><br /><br /><br /><br />
+
+</fieldset>

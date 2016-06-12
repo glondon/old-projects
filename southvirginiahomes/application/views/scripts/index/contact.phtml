@@ -1,0 +1,24 @@
+<?php $this->headTitle()->append('Contact David Boord about real estate for sale in the Norfolk and Virginia Beach areas.'); 
+$this->headMeta()->appendName('description', 'Contact David Boord with any home buying questions you may have in the Norfolk and Virginia Beach areas.'); 
+$this->headMeta()->appendName('keywords', 'contact, david boord, Norfolk, Virginia Beach'); ?>
+
+<?php if ($this->escape($this->submitted)) { ?>
+
+<fieldset>
+
+<h2>Thankyou for your inquiry to South Virginia Homes</h2>
+<p>An agent will be in touch with you shortly.</p>
+<br /><br /><br /><br />
+
+</fieldset>
+
+<?php } else { ?>
+
+<fieldset>
+
+<span class="formt">Contact</span>
+<?php echo $this->form; ?>
+
+</fieldset>
+
+<?php } ?>

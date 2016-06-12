@@ -1,0 +1,29 @@
+RewriteEngine On
+
+# Redirect www urls to non-www
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^southvirginiahomes\.com
+RewriteRule (.*) http://southvirginiahomes.com/$1 [R=301,L] 
+
+RewriteRule ^\.htaccess$ - [F]
+RewriteCond %{REQUEST_URI} =""
+RewriteRule ^.*$ /public/index.php [NC,L]
+RewriteCond %{REQUEST_URI} !^/public/.*$
+RewriteRule ^(.*)$ /public/$1
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^public/.*$ /public/index.php [NC,L]
+
+SetEnv APPLICATION_ENV production
+
+# Block people seeing the htaccess file
+<Files .htaccess>
+order deny,allow
+deny from all
+</Files>
+
+
+# Redirect www urls to non-www
+# RewriteEngine on
+# RewriteCond %{HTTP_HOST} !^example\.com
+# RewriteRule (.*) http://example.com/$1 [R=301,L] 
