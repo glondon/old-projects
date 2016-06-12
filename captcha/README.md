@@ -2,4 +2,4 @@ Captcha
 ========
 
 
-Testing a simple captcha form.
+Testing a simple form with a captcha.
